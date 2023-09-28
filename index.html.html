@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best online food delivering services in India</title>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+  #logo img{
+    
+  }
+  #navbar{
+    position: absolute;
+    top: 0px;
+    display: flex;
+  }
+  #navbar{
+ position: sticky;
+    top: 0%;
+  }
+   
+  
+  #navbar::before{
+    content:" ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.4;
+    
+  }
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+#home::before{
+    content:" ";
+    position: absolute;
+    background-image:url(vegetables.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+ #navbar  ul{
+display: flex;
+  }
+  #navbar ul li{
+    list-style: none;
+    font-size: 20px;
+  }
+  #navbar li a{
+    color: white;
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  #navbar ul li a:hover{
+    color: black;
+    
+  }
+  .h-primary{
+    font-size: 40px;
+    padding-top: 30px;
+  }
+  #home h1{
+    color: red;
+    text-align: center;
+  }
+  #home p{
+    padding-top:20px;
+    color: black;
+  }
+  .btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .btn:hover{
+    background-color: transparent;
+    color: white;
+  }
+#services-container{
+    margin-top: 20px;
+    
+}
+#services{
+    margin-top: 20px;
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+.box{
+    border-radius: 15px;
+    width: 300px;
+    background-color: darkorange;
+}
+.box img{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+}
+.box h2{
+    padding-top: 20px;
+    text-align: center;
+}
+.box p{
+    padding: 20px;
+}
+#services-container h1{
+    text-align: center;
+    padding-top: 20px;
+}
+#client-section{
+  margin-top: 50px;
+  
+}
+#client-section h1{
+  font-weight: bolder;
+  text-align: center;
+  
+}
+.clients{
+  margin-top: 30px;
+  
+   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+.logoimg{
+  
+  width: 200px;
+ 
+  
+}
+.logoimg img{
+  width: 100%;
+  height: 100px;
+  
+}
+#contact{
+  margin-top: 40px;
+  position: relative;
+}
+#contact h1{
+  text-align: center;
+}
+#contact::before{
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background-image: url(phoneimage.jpg);
+  background-repeat: no-repeat;
+  background-position: center center ;
+  background-size: cover;
+}
+#contact-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 5px;
+  border-radius: 9px;
+  font-size: 20px;
+}
+.form-group label{
+font-size: 20px;
+padding-top: 10px;
+}
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media (max-width:950px){
+  #services{
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ 
+  }
+  #services .box{
+    margin-top: 30px;
+  }
+  .clients{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .clients .logoimg{
+    margin-top: 30px;
+  }
+  @media (max-width:690px){
+    #navbar{
+      width: 100%;
+      flex-direction: column;
+    }
+    #navbar ul li a{
+      font-size: 15px;
+      padding: 0px 7px;
+      padding-bottom: 8px;
+    }
+    #home{
+      height: 280px;
+      padding: 3px 10px;
+      
+    }
+    #home::before{
+      height: 370px;
+    }
+    #home p{
+      font-size: 9px;
+    }
+    #home h1{
+      font-size: 15px;
+    }
+    .btn{
+      padding: 3px 8px;
+      font-size: 13px;
+      background-color: red;
+    }
+    #services-container h1{
+      margin-top: 40px;
+    }
+    .box h2{
+      font-size: 15px;
+
+    }
+    .box p{
+      font-size: 10px;
+    }
+  }
+  #contact-box form{
+    width: 80%;
+  }
+   
+  
+}
+    </style>
+</head>
+<body>
+    <section id="navbar">
+     
+      <ul>
+        <li class="item"><a href="#home">Home</a></li>
+        <li class="item"><a href="#services">Services</a></li>
+        <li class="item"><a href="#client-section">Our clients</a></li>
+        <li class="item"><a href="#contact">contact us</a></li>
+      </ul>
+    </section>
+    <section id="home">
+        <h1 class="h-primary">Welcome to My online Meal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, amet nulla? Ex aliquam odit fuga ipsam repudiandae enim nihil, odio distinctio, cum iste laborum nostrum aliquid eligendi. Distinctio, natus sequi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, earum! Ducimus eveniet, error ma</p>
+        <button class="btn">Order now</button>
+    </section>
+    <section id="services-container">
+     <h1>Our services</h1>
+     <div id="services">
+        <div class="box">
+            <img src="food ordering.jpg" alt="">
+            <h2>Food ordering</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis illum aperiam, aspernatur repellendus deleniti vitae nulla molestias soluta excepturi odit atque consequatur voluptas quisquam exercitationem eveniet et ducimus nobis pariatur ullam id doloremque temporibus.</p>
+        </div>
+        <div class="box">
+            <img src="catering.jpg" alt="">
+            <h2>Catering</h2>
+            <p>Lorem ipsum Lorem ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis aspernatur ea quis cum eligendi, culpa repellendus sit perferendis voluptatibus autem, eveniet suscipit nisi! dolor sit amet consectetur adipisicing elit. Expedita minima, rerum delectus porro ducimus quidem ab iusto quaerat nostrum, ipsa itaque, sunt ullam! dolor sit amet consectetur adipisicing elit. Earum quasi placeat odio unde excepturi, laudantium nostrum accusamus nisi deserunt iusto praesentium ipsam, modi quaerat quo dicta temporibus vel maxime amet error? Similique, corrupti culpa?</p>
+        </div>
+        <div class="box">
+            <img src="ordering.jpg" alt="">
+            <h2>Bulk ordering</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur facilis nesciunt sunt nihil, rerum voluptatibus id voluptas numquam dicta animi ut fuga laborum! adipisicing elit. In fuga, enim eum dignissimos itaque asperiores eius id culpa, dolore aperiam ex illo quos ab, consequuntur nam laborum placeat quidem omnis debitis tempora excepturi? Dicta!</p>
+        </div>
+     </div>
+    </section>
+    <section id="client-section">
+      <h1>Our clients</h1>
+      <div class="clients">
+        <div class="logoimg">
+          <img src="applelogo.jpg" alt="">
+        </div>
+        <div class="logoimg">
+          <img src="skypelogo.jpg" alt="">
+        </div>
+        <div class="logoimg">
+          <img src="microsoftimages.jpg" alt="">
+        </div>
+        <div class="logoimg">
+          <img src="hplogo.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1>Contact us</h1>
+      <div id="contact-box">
+        <form action="">
+          <div class="form-group">
+            <label for="name">Name:</label><input type="text" name="name" id="name" placeholder="Enter your name">
+          </div>
+           <div class="form-group">
+            <label for="email">Email:</label><input type="email" name="email" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label><input type="phone" name="phone" id="phone" placeholder="Enter your phone number">
+          </div>
+           <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      copyright &copy; www.myonlinemeal.com. All rights reserved
+    </footer>
+    
+</body>
+</html>
